@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import {View, Text, StyleSheet, ActivityIndicator, FlatList,Alert} from 'react-native'
-import Icon from 'react-native-vector-icons/FontAwesome';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 export default class Profile extends Component{
     
@@ -66,10 +65,7 @@ export default class Profile extends Component{
  componentDidMount(){
     this.fetchData();
         }
-
-
-
-        fetchData = async () => {
+fetchData = async () => {
             try {
               // Retrieve the token from AsyncStorage
               const token = await AsyncStorage.getItem('userToken');
