@@ -29,7 +29,7 @@ export default class Login  extends Component{
     },
     body: JSON.stringify({
       authinfo,
-      password,
+      password
     }),
   })
     .then(response => response.json())
